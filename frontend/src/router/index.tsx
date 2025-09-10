@@ -5,6 +5,7 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <SecurityLayout />,
+        children: []
     }
 ])
 
