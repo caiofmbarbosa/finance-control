@@ -11,7 +11,14 @@
 }
 
 @theme {
+  /* Colors */
   --color-footer-bg: #d3d3d3;
+  --color-button-bg: #f2fc37;
+  --color-button-text: #030303;
+
+  /* Text sizes */
+  --text-subscription-card-title: 1.25rem;
+  --text-button: 0.875rem;
 }
 
 html,

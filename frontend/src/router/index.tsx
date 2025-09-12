@@ -5,7 +5,16 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <SecurityLayout />,
-        children: []
+        children: [
+            {
+                index: true,
+                // lazy: () => import(/* webpackChunkName: "Home" */ "@/pages/Home").then(module => ({ Component: module.default }))
+            },
+            {
+                path: "subscriptions",
+                lazy: () => import(/* webpackChunkName: "Subscriptions" */ "@/pages/subscriptions/Subscriptions").then(module => ({ Component: module.default }))
+            },
+        ]
     }
 ])
 
