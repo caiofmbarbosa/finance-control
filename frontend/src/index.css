@@ -15,10 +15,15 @@
   --color-footer-bg: #d3d3d3;
   --color-button-bg: #f2fc37;
   --color-button-text: #030303;
+  --color-input-stroke: #e3e3e3;
+  --color-input-placeholder: #a9a9a9;
 
   /* Text sizes */
+  --text-title: 1.5rem;
   --text-subscription-card-title: 1.25rem;
   --text-button: 0.875rem;
+  --text-input-label: 0.875rem;
+  --text-policy: 0.75rem;
 }
 
 html,

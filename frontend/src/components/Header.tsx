@@ -15,7 +15,7 @@ function Header() {
                         <Link to={"/subscriptions"}>Subscriptions</Link>
                     </li>
                     <li>
-                        <Link to={"/manage-subscriptions"}>Edit Subscriptions</Link>
+                        <Link to={"/manage-subscription"}>Edit Subscription</Link>
                     </li>
                     <li>
                         <Link to={"/settings"}>Settings</Link>

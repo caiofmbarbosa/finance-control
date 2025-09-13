@@ -4,6 +4,7 @@ interface CustomButtonInterface {
   children?: React.ReactNode
   customClass?: string
   noHover?: boolean
+  disabled?: boolean
 }
 
 export type { CustomButtonInterface }
