@@ -8,7 +8,10 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        // lazy: () => import(/* webpackChunkName: "Home" */ "@/pages/Home").then(module => ({ Component: module.default }))
+        lazy: () =>
+          import(/* webpackChunkName: "Home" */ "@/pages/home").then(
+            (module) => ({ Component: module.default }),
+          ),
       },
       {
         path: "subscriptions",

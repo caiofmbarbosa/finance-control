@@ -16,6 +16,7 @@
   --color-button-bg: #f2fc37;
   --color-button-text: #030303;
   --color-input-stroke: #e3e3e3;
+  --color-divider: #e3e3e3;
   --color-input-login-stroke: #323232;
   --color-input-placeholder: #a9a9a9;
   --color-login-card-bg: #1a1a1a;
@@ -28,11 +29,14 @@
   /* Text sizes */
   --text-title: 1.5rem;
   --text-subscription-card-title: 1.25rem;
+  --text-subscription-dashboard-value-card: 1.25rem;
+  --text-subscription-dashboard-card-title: 1.125rem;
   --text-button: 0.875rem;
   --text-input-label: 0.875rem;
   --text-login-signup: 0.875rem;
   --text-policy: 0.75rem;
   --text-label-size: 1rem;
+  --text-value-size: 2.25rem;
 }
 
 html,
