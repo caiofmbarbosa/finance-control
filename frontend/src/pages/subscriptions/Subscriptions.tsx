@@ -1,5 +1,5 @@
 import CustomButton from "@/components/CustomButton"
-import SubscriptionCard from "@/components/SubscriptionCard"
+import SubscriptionCard from "@/pages/subscriptions/components/SubscriptionCard"
 
 // TODO take mocked data out and implement fetching real data
 function Subscriptions() {
@@ -14,7 +14,11 @@ function Subscriptions() {
       </section>
 
       <section className="grid w-full flex-1 flex-col">
-        <CustomButton onClick={() => {}} customClass="h-full w-full hover:font-bold transition-all ease" noHover>
+        <CustomButton
+          onClick={() => {}}
+          customClass="h-full w-full hover:font-bold transition-all ease"
+          noHover
+        >
           Add New Subscription
         </CustomButton>
       </section>

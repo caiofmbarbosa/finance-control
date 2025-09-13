@@ -1,4 +1,4 @@
-import SettingsCard from "@/components/SettingsCard"
+import SettingsCard from "@/pages/settings/components/SettingsCard"
 import { IoSettings } from "react-icons/io5"
 import { MdSms } from "react-icons/md"
 import { FaUser, FaKey, FaEnvelope } from "react-icons/fa"

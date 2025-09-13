@@ -1,7 +1,7 @@
 import { TRASH_ICON_SIZE } from "@/consts/ParametricConsts"
 import type { SubscriptionCardInterface } from "@/interfaces/SubscriptionCardInterface"
 import { FaTrash } from "react-icons/fa"
-import CustomButton from "./CustomButton"
+import CustomButton from "../../../components/CustomButton"
 
 // TODO take mocked data out and implements onClick functions
 function SubscriptionCard({ title, date, cost }: SubscriptionCardInterface) {
@@ -18,7 +18,10 @@ function SubscriptionCard({ title, date, cost }: SubscriptionCardInterface) {
       </div>
 
       <div className="mt-4 flex justify-end">
-        <CustomButton onClick={() => {}} customClass="flex items-center gap-2 justify-center">
+        <CustomButton
+          onClick={() => {}}
+          customClass="flex items-center gap-2 justify-center"
+        >
           Delete <FaTrash size={TRASH_ICON_SIZE} />
         </CustomButton>
       </div>

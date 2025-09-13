@@ -2,7 +2,7 @@ import type {
   SubscriptionFormData,
   SubscriptionFormInterface,
 } from "@/interfaces/SubscriptionFormInterface"
-import CustomButton from "./CustomButton"
+import CustomButton from "../../../components/CustomButton"
 import { useEffect, useState } from "react"
 import * as yup from "yup"
 import utils from "@/utils/utils"

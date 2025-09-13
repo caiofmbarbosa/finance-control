@@ -1,4 +1,4 @@
-import SubscriptionForm from "@/components/SubscriptionForm"
+import SubscriptionForm from "@/pages/subscriptions/components/SubscriptionForm"
 
 function SubscriptionManager() {
   return (
