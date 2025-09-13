@@ -15,7 +15,7 @@ function SettingsCard({
             type="button"
             onClick={setting.onClick}
             disabled={disabled}
-            className={`transition-transform flex w-full items-center gap-2 hover:scale-105 ${disabled ? "cursor-not-allowed opacity-50" : "cursor-pointer"} rounded-md p-2 text-left transition-colors duration-200`}
+            className={`flex w-full items-center gap-2 transition-transform hover:scale-105 ${disabled ? "cursor-not-allowed opacity-50" : "cursor-pointer"} rounded-md p-2 text-left transition-colors duration-200`}
           >
             {setting.icon}
             {setting.label}

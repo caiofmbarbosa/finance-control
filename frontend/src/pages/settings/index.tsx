@@ -35,9 +35,12 @@ function Settings() {
       <span className="text-title flex items-center gap-2">
         <IoSettings /> Settings
       </span>
-      <section className="grid grid-cols-3 gap-4 mt-4">
+      <section className="mt-4 grid grid-cols-3 gap-4">
         <SettingsCard title="Account Management" settings={accountSettings} />
-        <SettingsCard title="Notification Preferences" settings={notificationSettings} />
+        <SettingsCard
+          title="Notification Preferences"
+          settings={notificationSettings}
+        />
       </section>
     </main>
   )

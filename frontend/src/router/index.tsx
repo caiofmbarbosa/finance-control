@@ -39,7 +39,7 @@ const router = createBrowserRouter([
       import(/* webpackChunkName: "Login" */ "@/pages/security/Login").then(
         (module) => ({ Component: module.default }),
       ),
-  }
+  },
 ])
 
 export default router

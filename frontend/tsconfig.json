@@ -30,6 +30,6 @@
     /* Project quality */
     "allowJs": false,
     "checkJs": false,
-    "resolveJsonModule": true,
+    "resolveJsonModule": true
   }
 }

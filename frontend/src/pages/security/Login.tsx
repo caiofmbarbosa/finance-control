@@ -13,7 +13,7 @@ function Login() {
   const user = false // TODO check if user is logged in
 
   return !user ? (
-    <div className="flex min-h-screen items-center justify-center bg-login-bg">
+    <div className="bg-login-bg flex min-h-screen items-center justify-center">
       <div className="bg-login-card-bg rounded-2xl p-8 text-center">
         <h1 className="text-login-text text-title">
           Welcome to
@@ -33,7 +33,9 @@ function Login() {
             className="text-login-text text-login-signup cursor-pointer transition-transform hover:scale-105"
             onClick={handleSignUpClick}
           >
-            {isRegistering ? "Already have an account? Login here" : "Don't have an account? Register here"}
+            {isRegistering
+              ? "Already have an account? Login here"
+              : "Don't have an account? Register here"}
           </p>
           <GoogleButton />
         </div>

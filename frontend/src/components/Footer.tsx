@@ -6,7 +6,7 @@ import { ICON_SIZE } from "@/consts/ParametricConsts"
 // TODO implement responsive design and night mode
 function Footer() {
   return (
-    <footer className="flex items-center justify-between p-4 bg-footer-bg">
+    <footer className="bg-footer-bg flex items-center justify-between p-4">
       <div className="w-[20%]">
         <ul className="flex items-center gap-4">
           <li>
