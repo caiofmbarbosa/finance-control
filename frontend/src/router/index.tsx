@@ -33,6 +33,13 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/login",
+    lazy: () =>
+      import(/* webpackChunkName: "Login" */ "@/pages/security/Login").then(
+        (module) => ({ Component: module.default }),
+      ),
+  }
 ])
 
 export default router

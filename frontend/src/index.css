@@ -16,14 +16,23 @@
   --color-button-bg: #f2fc37;
   --color-button-text: #030303;
   --color-input-stroke: #e3e3e3;
+  --color-input-login-stroke: #323232;
   --color-input-placeholder: #a9a9a9;
+  --color-login-card-bg: #1a1a1a;
+  --color-login-bg: #323232;
+  --color-login-text: #0fc;
+  --color-login-input-bg: #0fc;
+  --color-google: #db4437;
+  --color-label: #e0e0e0;
 
   /* Text sizes */
   --text-title: 1.5rem;
   --text-subscription-card-title: 1.25rem;
   --text-button: 0.875rem;
   --text-input-label: 0.875rem;
+  --text-login-signup: 0.875rem;
   --text-policy: 0.75rem;
+  --text-label-size: 1rem;
 }
 
 html,
