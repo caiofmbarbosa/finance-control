@@ -24,6 +24,13 @@ const router = createBrowserRouter([
             /* webpackChunkName: "ManageSubscription" */ "@/pages/subscriptions/SubscriptionManager"
           ).then((module) => ({ Component: module.default })),
       },
+      {
+        path: "settings",
+        lazy: () =>
+          import(/* webpackChunkName: "Settings" */ "@/pages/settings").then(
+            (module) => ({ Component: module.default }),
+          ),
+      },
     ],
   },
 ])
