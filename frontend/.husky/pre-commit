@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+set -e
+
+echo "🔧 Husky (frontend) pre-commit"
+# garante que o comando roda dentro do frontend
+cd "$(git rev-parse --show-toplevel)/frontend"
+
+npm run format
