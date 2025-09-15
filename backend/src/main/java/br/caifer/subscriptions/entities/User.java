@@ -3,7 +3,6 @@ package br.caifer.subscriptions.entities;
 import br.caifer.subscriptions.enums.Roles;
 import jakarta.persistence.*;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
