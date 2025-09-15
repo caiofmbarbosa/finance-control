@@ -18,10 +18,10 @@ public class TokenService {
     private String jwtSecret;
 
     @Value("${jwt.expiration.ms.access}")
-    private String jwtExpirationAccessMs;
+    private long jwtExpirationAccessMs;
 
     @Value("${jwt.expiration.ms.refresh}")
-    private String jwtExpirationRefreshMs;
+    private long jwtExpirationRefreshMs;
 
     private Key getKey() {
         return Keys.hmacShaKeyFor(Decoders.BASE64URL.decode(jwtSecret));
