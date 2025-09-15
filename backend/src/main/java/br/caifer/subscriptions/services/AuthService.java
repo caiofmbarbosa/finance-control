@@ -3,6 +3,7 @@ package br.caifer.subscriptions.services;
 import br.caifer.subscriptions.controllers.auth.dto.LoginRequestDTO;
 import br.caifer.subscriptions.entities.User;
 import br.caifer.subscriptions.entities.UserPreference;
+import br.caifer.subscriptions.enums.Roles;
 import br.caifer.subscriptions.repositories.UserPreferenceRepository;
 import br.caifer.subscriptions.repositories.UserRepository;
 import br.caifer.subscriptions.security.TokenService;
@@ -45,12 +46,11 @@ public class AuthService {
         User user = new User();
         user.setUsername(request.username());
         user.setPassword(passwordEncoder.encode(request.password()));
+        repository.save(user);
 
         UserPreference userPreference = new UserPreference();
         userPreference.setUser(user);
-
         userPreferenceRepository.save(userPreference);
-        repository.save(user);
 
     }
 }

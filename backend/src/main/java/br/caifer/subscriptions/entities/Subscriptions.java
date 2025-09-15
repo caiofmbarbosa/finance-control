@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.JdbcType;
+import org.hibernate.dialect.PostgreSQLEnumJdbcType;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -30,7 +32,9 @@ public class Subscriptions {
     @Column(name = "cost", nullable = false, precision = 12, scale = 2)
     private BigDecimal cost;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "billing_period", nullable = false)
+    @JdbcType(PostgreSQLEnumJdbcType.class)
     private BillingPeriods billingPeriod = BillingPeriods.MONTHLY;
 
     @Column(name = "renewal_date", nullable = false)

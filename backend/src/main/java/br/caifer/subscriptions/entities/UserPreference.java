@@ -18,6 +18,7 @@ public class UserPreference {
     private UUID id;
 
     @OneToOne(optional = false)
+    @JoinColumn(name = "user_id", nullable = false, unique = true)
     private User user;
 
     @Column(name = "receive_email", nullable = false)
