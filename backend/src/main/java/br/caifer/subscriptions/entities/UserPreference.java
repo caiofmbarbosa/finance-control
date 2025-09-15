@@ -9,7 +9,7 @@ import lombok.Setter;
 import java.util.UUID;
 
 @Getter @Setter
-@RequiredArgsConstructor @NoArgsConstructor
+@RequiredArgsConstructor
 @Entity
 @Table(name = "user_preference")
 public class UserPreference {

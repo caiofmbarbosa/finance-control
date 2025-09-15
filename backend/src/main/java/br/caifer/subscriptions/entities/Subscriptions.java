@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.UUID;
 
 @Getter @Setter
-@RequiredArgsConstructor @NoArgsConstructor
+@RequiredArgsConstructor
 @Entity
 @Table(name = "subscriptions")
 public class Subscriptions {

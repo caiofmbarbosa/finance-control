@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Getter @Setter
-@RequiredArgsConstructor @NoArgsConstructor
+@RequiredArgsConstructor
 @Entity
 @Table(name = "users")
 public class User implements UserDetails {
@@ -36,7 +36,7 @@ public class User implements UserDetails {
     @Column(name = "role", nullable = false)
     private Roles role = Roles.ROLE_CUSTOMER;
 
-    @Column(name = "role", nullable = false)
+    @Column(name = "refresh_token")
     private String refreshToken;
 
     @CreationTimestamp
